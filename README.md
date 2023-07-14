@@ -35,12 +35,16 @@ MVC로 구현된 project NEMO(ver 1.0)를 발전시킨(ver 2.0) 프로젝트 입
 
 
 ## 개발환경
-- Java 11
-- JDK 11.0.17
-- IDE : STS 3.0
+- FrontEnd : HTML, CSS, JS, jQuery, AJAX, JSP
+- BackEnd : Java 11, JDK 11.0.17
+- API & Library : kakaomap Local&map, Summernote, DataTables, unirest , jacson
 - Framework: Spring
-- Database: MySQL(8)
+- Database: MySQL 8
 - ORM: MyBatis
+- Server : Apache Tomcat 9.0
+- IDE : STS 3.0
+- Design Tools : StarUML, Figma, Photoshop, ERDCloud
+- OS : Window 10, macOS Sonoma
 
 
 
