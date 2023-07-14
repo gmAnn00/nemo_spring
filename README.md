@@ -43,12 +43,15 @@ MVC로 구현된 project NEMO(ver 1.0)를 발전시킨(ver 2.0) 프로젝트 입
 - ORM: MyBatis
 - Server : Apache Tomcat 9.0
 - IDE : STS 3.0
+- SCM : GitHub, SourceTree
 - Design Tools : StarUML, Figma, Photoshop, ERDCloud
 - OS : Window 10, macOS Sonoma
 
 
 
-## 주요 기능
+## 핵심 기술 및 주요 기능
+- AJAX, GPS, kakaomap & Local, Zipcode API, Calendar, Editor Summernote, Query, Paging
+
 #### 로그인
 #### 회원가입
 #### 관심사 선택
