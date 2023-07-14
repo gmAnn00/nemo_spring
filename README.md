@@ -1,7 +1,7 @@
 # nemo_spring
 MVC로 구현된 project NEMO(ver 1.0)를 발전시킨(ver 2.0) 프로젝트 입니다.
 - 바뀐점 : Spring 적용, MyBatis 사용, MySQL사용, 컬럼구조 개편
-- ( ver 1.0 : MVC로 구현, Oracle 사용 )
+- ( [NEMO ver1.0](https://github.com/gmAnn00/nemo) : MVC로 구현, Oracle 사용  )
 
 
 
