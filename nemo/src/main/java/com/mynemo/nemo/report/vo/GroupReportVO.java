@@ -1,4 +1,4 @@
-package com.mynemo.nemo.report;
+package com.mynemo.nemo.report.vo;
 
 import java.sql.Date;
 
