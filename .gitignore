@@ -3,3 +3,5 @@ Servers
 stsproject
 *.class
 nemo/target/m2e-wtp/web-resources/META-INF/maven/com.mynemo/nemo/pom.properties
+.classpath
+target/
