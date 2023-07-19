@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.mynemo.nemo.board.vo.BoardVO" alias="boardVO"/>
+		<typeAlias type="com.mynemo.nemo.board.vo.CommentVO" alias="commentVO"/>
+		
+		<typeAlias type="com.mynemo.nemo.group.vo.AttendVO" alias="attendVO"/>
+		<typeAlias type="com.mynemo.nemo.group.vo.BookmarkVO" alias="bookmarkVO"/>
+		<typeAlias type="com.mynemo.nemo.group.vo.CategoryVO" alias="categoryVO"/>
+		<typeAlias type="com.mynemo.nemo.group.vo.GroupVO" alias="groupVO"/>
+		<typeAlias type="com.mynemo.nemo.group.vo.JoinVO" alias="joinVO"/>
+		<typeAlias type="com.mynemo.nemo.group.vo.ScheduleVO" alias="scheduleVO"/>
+		<typeAlias type="com.mynemo.nemo.group.vo.WaitlistVO" alias="waitlistVO"/>
+		
+		<typeAlias type="com.mynemo.nemo.qna.vo.QnaVO" alias="qnaVO"/>
+		
+		<typeAlias type="com.mynemo.nemo.report.vo.GroupReportVO" alias="groupReportVO"/>
+		<typeAlias type="com.mynemo.nemo.report.vo.UserReportVO" alias="userReportVO"/>
+		
+		<typeAlias type="com.mynemo.nemo.user.vo.InterestsVO" alias="interestsVO"/>
+		<typeAlias type="com.mynemo.nemo.user.vo.KakaoVO" alias="kakaoVO"/>
+		<typeAlias type="com.mynemo.nemo.user.vo.UserVO" alias="userVO"/>
+		<typeAlias type="com.mynemo.nemo.test.vo.TestVO" alias="testVO"/>
+	</typeAliases>
+	
+</configuration>
