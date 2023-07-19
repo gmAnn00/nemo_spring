@@ -12,7 +12,7 @@ public class ViewNameInterceptor extends HandlerInterceptorAdapter {
 			throws Exception {
 		String viewName = getViewName(request);
 		request.setAttribute("viewName", viewName);
-
+		System.out.println(viewName);
 		return true;
 
 	}
@@ -20,7 +20,7 @@ public class ViewNameInterceptor extends HandlerInterceptorAdapter {
 	private String getViewName(HttpServletRequest request) throws Exception {
 		String contextPath = request.getContextPath();
 		String uri = (String) request.getAttribute("javax.servlet.include.request_uri");
-
+		System.out.println("dㅕ기1"+uri);
 		if (uri == null || uri.trim().equals("")) {
 			uri = request.getRequestURI();
 		}
@@ -52,6 +52,7 @@ public class ViewNameInterceptor extends HandlerInterceptorAdapter {
 			fileName = fileName.substring(fileName.lastIndexOf("/", 1), fileName.length());
 		}
 
+		System.out.println("filename"+fileName);
 		return fileName;
 	} // end of getViewName
 }

@@ -24,6 +24,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<typeAlias type="com.mynemo.nemo.user.vo.InterestsVO" alias="interestsVO"/>
 		<typeAlias type="com.mynemo.nemo.user.vo.KakaoVO" alias="kakaoVO"/>
 		<typeAlias type="com.mynemo.nemo.user.vo.UserVO" alias="userVO"/>
+		<typeAlias type="com.mynemo.nemo.test.vo.TestVO" alias="testVO"/>
 	</typeAliases>
 	
 </configuration>

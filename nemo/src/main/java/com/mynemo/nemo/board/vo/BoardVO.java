@@ -2,6 +2,9 @@ package com.mynemo.nemo.board.vo;
 
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component("boardVO")
 public class BoardVO {
 	private int article_no;
 	private String user_id;
