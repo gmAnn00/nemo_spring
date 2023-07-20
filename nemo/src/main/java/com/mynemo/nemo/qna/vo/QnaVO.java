@@ -1,6 +1,7 @@
 package com.mynemo.nemo.qna.vo;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class QnaVO {
 	private int qna_no;
@@ -8,7 +9,7 @@ public class QnaVO {
 	private int parent_no;
 	private String title;
 	private String content;
-	private Date create_date;
+	private Timestamp create_date;
 	
 	public QnaVO() {
 		// TODO Auto-generated constructor stub
@@ -54,11 +55,11 @@ public class QnaVO {
 		this.content = content;
 	}
 
-	public Date getCreate_date() {
+	public Timestamp getCreate_date() {
 		return create_date;
 	}
 
-	public void setCreate_date(Date create_date) {
+	public void setCreate_date(Timestamp create_date) {
 		this.create_date = create_date;
 	}
 	

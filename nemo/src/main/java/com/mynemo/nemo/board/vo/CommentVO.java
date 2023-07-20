@@ -1,12 +1,13 @@
 package com.mynemo.nemo.board.vo;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class CommentVO {
 	private int comment_no;
 	private int article_no;
 	private String user_id;
-	private Date create_date;
+	private Timestamp create_date;
 	private String comment;
 	private int parent_no;
 	
@@ -38,11 +39,11 @@ public class CommentVO {
 		this.user_id = user_id;
 	}
 
-	public Date getCreate_date() {
+	public Timestamp getCreate_date() {
 		return create_date;
 	}
 
-	public void setCreate_date(Date create_date) {
+	public void setCreate_date(Timestamp create_date) {
 		this.create_date = create_date;
 	}
 
