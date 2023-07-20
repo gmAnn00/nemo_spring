@@ -1,7 +1,5 @@
 package com.mynemo.nemo.group.vo;
 
-import java.sql.Date;
-
 public class AttendVO {
 
 	private int attend_id;
