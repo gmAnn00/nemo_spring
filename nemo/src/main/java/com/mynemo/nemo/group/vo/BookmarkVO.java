@@ -1,20 +1,16 @@
 package com.mynemo.nemo.group.vo;
 
 public class BookmarkVO {
-	private int bookmark_id;
 	private String user_id;
-	private String group_id;
+	private int group_id;
 	
 	public BookmarkVO() {
 		// TODO Auto-generated constructor stub
 	}
-
-	public int getBookmark_id() {
-		return bookmark_id;
-	}
-
-	public void setBookmark_id(int bookmark_id) {
-		this.bookmark_id = bookmark_id;
+	
+	public BookmarkVO(String user_id, int group_id) {
+		this.user_id = user_id;
+		this.group_id = group_id;
 	}
 
 	public String getUser_id() {
@@ -25,11 +21,11 @@ public class BookmarkVO {
 		this.user_id = user_id;
 	}
 
-	public String getGroup_id() {
+	public int getGroup_id() {
 		return group_id;
 	}
 
-	public void setGroup_id(String group_id) {
+	public void setGroup_id(int group_id) {
 		this.group_id = group_id;
 	}
 	
