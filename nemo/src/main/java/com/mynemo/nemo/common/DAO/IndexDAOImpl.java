@@ -17,10 +17,10 @@ public class IndexDAOImpl implements IndexDAO {
 	
 	@Override
 	public List<GroupVO> getRandomGroupList() throws DataAccessException{
-		//List<GroupVO> groupList=null;
-		//groupList=sqlSession.selectList("mapper.index.selectRamdomGroupList");
-		//return groupList;
-		return null;
+		List<GroupVO> groupList=null;
+		groupList=sqlSession.selectList("mapper.index.selectRamdomGroupList");
+		return groupList;
+		//return null;
 	}
 
 }

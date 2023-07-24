@@ -12,13 +12,13 @@
 <head>
 <meta charset="UTF-8">
 <title>네모: 동네모임</title>
-<link rel="shortcut icon" href="${contextPath}/resource/images/favicon.png" />
-<link rel="stylesheet" href="${contextPath}/resource/css/normalize.css" />
-<link rel="stylesheet" href="${contextPath}/resource/css/common.css" />
-<link rel="stylesheet" href="${contextPath}/resource/css/index.css" />
-<script src="${contextPath}/resource/js/jquery-3.6.4.min.js"></script>
-<script src="${contextPath}/resource/js/header.js"></script>
-<script src="${contextPath}/resource/js/index.js"></script>
+<link rel="shortcut icon" href="${contextPath}/resources/images/favicon.png" />
+<link rel="stylesheet" href="${contextPath}/resources/css/normalize.css" />
+<link rel="stylesheet" href="${contextPath}/resources/css/common.css" />
+<link rel="stylesheet" href="${contextPath}/resources/css/index.css" />
+<script src="${contextPath}/resources/js/jquery-3.6.4.min.js"></script>
+<script src="${contextPath}/resources/js/header.js"></script>
+<script src="${contextPath}/resources/js/index.js"></script>
 <script src="https://kit.fontawesome.com/f9a2702e84.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,11 +27,11 @@
 	<!--메인 이미지 영역-->
         <div class="intro">
             <div class="intro-slideshow">
-                <img src="${contextPath}/resource/images/main_bike2.jpg" />
-                <img src="${contextPath}/resource/images/main_book.jpg" />
-                <img src="${contextPath}/resource/images/main_music2.jpg" />
-                <img src="${contextPath}/resource/images/main_pet.jpg" />
-                <img src="${contextPath}/resource/images/main_culture.jpg.jpg" />
+                <img src="${contextPath}/resources/images/main_bike2.jpg" />
+                <img src="${contextPath}/resources/images/main_book.jpg" />
+                <img src="${contextPath}/resources/images/main_music2.jpg" />
+                <img src="${contextPath}/resources/images/main_pet.jpg" />
+                <img src="${contextPath}/resources/images/main_culture.jpg.jpg" />
             </div>
             <div class="intro-header">
                 <h1>새로운 경험과<br> 친구를 만나보세요</h1>
@@ -171,7 +171,7 @@
 	                        <i class="fa-solid fa-angle-right"></i>
 	                    </div>
                     </a>
-                    <img class="group_jm_img jm_img1" src="${contextPath}/resource/images/—Pngtree—people make puzzles concept team_5356575.png" alt="bg">
+                    <img class="group_jm_img jm_img1" src="${contextPath}/resources/images/—Pngtree—people make puzzles concept team_5356575.png" alt="bg">
                 </div>
                 
                 <div class="group_jm_box jm_box2">
@@ -185,7 +185,7 @@
 	                        <i class="fa-solid fa-angle-right"></i>
 	                    </div>
                     </a>
-                    <img class="group_jm_img jm_img2" src="${contextPath}/resource/images/—Pngtree—best friends happy taking selfie_5435706.png" alt="bg">
+                    <img class="group_jm_img jm_img2" src="${contextPath}/resources/images/—Pngtree—best friends happy taking selfie_5435706.png" alt="bg">
                 </div>
 
             </div>
@@ -207,14 +207,14 @@
 		                        <div class="card__info-hover">
 		                        </div>
 		                        <div class="card__img"></div>
-		                        <a href="${contextPath}/group/groupInfo?group_id=${group.grp_id}" class="card_link">
-		                            <div class="card__img--hover" style="background-image: url('${contextPath}/groupImages/${group.grp_id}/${group.grp_img}')"></div>
+		                        <a href="${contextPath}/group/groupInfo?group_id=${group.group_id}" class="card_link">
+		                            <div class="card__img--hover" style="background-image: url('${contextPath}/resources/groupImages/${group.group_id}/${group.group_img}')"></div>
 		                        </a>
 		                        <div class="card__info">
-		                            <span class="card__category">${group.main_name}</span>
-		                            <span class="card__category">${group.sub_name}</span>
-		                            <h3 class="card__title">${group.grp_name}</h3>
-		                            <span class="card__by"><i class="fa-solid fa-location-dot"></i> <a href="" class="card__author">${group.grp_addr1}</a></span>
+		                            <span class="card__category">${group.main_cate}</span>
+		                            <span class="card__category">${group.sub_cate}</span>
+		                            <h3 class="card__title">${group.group_name}</h3>
+		                            <span class="card__by"><i class="fa-solid fa-location-dot"></i> <a href="" class="card__author">${group.group_addr1}</a></span>
 		                        </div>
 		                    </div>
 	                	
@@ -235,14 +235,14 @@
 		                        <div class="card__info-hover">
 		                        </div>
 		                        <div class="card__img"></div>
-		                        <a href="${contextPath}/group/groupInfo?group_id=${group.grp_id}" class="card_link">
-		                            <div class="card__img--hover" style="background-image: url('${contextPath}/groupImages/${group.grp_id}/${group.grp_img}')"></div>
+		                        <a href="${contextPath}/group/groupInfo?group_id=${group.group_id}" class="card_link">
+		                            <div class="card__img--hover" style="background-image: url('${contextPath}/resources/groupImages/${group.group_id}/${group.group_img}')"></div>
 		                        </a>
 		                        <div class="card__info">
-		                            <span class="card__category">${group.main_name}</span>
-		                            <span class="card__category">${group.sub_name}</span>
-		                            <h3 class="card__title">${group.grp_name}</h3>
-		                            <span class="card__by"><i class="fa-solid fa-location-dot"></i> <a href="#" class="card__author">${group.grp_addr1}</a></span>
+		                            <span class="card__category">${group.main_cate}</span>
+		                            <span class="card__category">${group.sub_cate}</span>
+		                            <h3 class="card__title">${group.group_name}</h3>
+		                            <span class="card__by"><i class="fa-solid fa-location-dot"></i> <a href="#" class="card__author">${group.group_addr1}</a></span>
 		                        </div>
 		                    </div>
 	               	   </c:forEach> 
@@ -261,13 +261,13 @@
 		                        </div>
 		                        <div class="card__img"></div>
 		                        <a href="#" class="card_link">
-		                            <div class="card__img--hover" style="background-image: url('${contextPath}/groupImages/${group.grp_id}/${group.grp_img}')"></div>
+		                            <div class="card__img--hover" style="background-image: url('${contextPath}/resources/groupImages/${group.group_id}/${group.group_img}')"></div>
 		                        </a>
 		                        <div class="card__info">
-		                            <span class="card__category">${group.main_name}</span>
-		                            <span class="card__category">${group.sub_name}</span>
-		                            <h3 class="card__title">${group.grp_name}</h3>
-		                            <span class="card__by"><i class="fa-solid fa-location-dot"></i> <a href="#" class="card__author">${group.grp_addr1}</a></span>
+		                            <span class="card__category">${group.main_cate}</span>
+		                            <span class="card__category">${group.sub_cate}</span>
+		                            <h3 class="card__title">${group.group_name}</h3>
+		                            <span class="card__by"><i class="fa-solid fa-location-dot"></i> <a href="#" class="card__author">${group.group_addr1}</a></span>
 		                        </div>
 		                    </div>
 	            	   </c:forEach>

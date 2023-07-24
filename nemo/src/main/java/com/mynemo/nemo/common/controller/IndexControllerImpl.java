@@ -36,7 +36,9 @@ public class IndexControllerImpl implements IndexController {
         
         //비로그인시
         if(user_id==null) {
-        	List<GroupVO> groupList=indexService.getRandomGroupList();
+        	List<GroupVO> randomGroupsList=indexService.getRandomGroupList();
+        	mav.addObject("randomGroupsList", randomGroupsList);
+        	//request.setAttribute("groupList", groupList);
         } else {
         	
         }

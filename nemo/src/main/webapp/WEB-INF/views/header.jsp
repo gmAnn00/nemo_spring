@@ -20,7 +20,7 @@
         <!-- header 시작 -->
         <header>
             <h1 class="logo">
-                <a href="${contextPath}/index"><img src="${contextPath}/resource/images/logo.png" alt="logo" /></a>
+                <a href="${contextPath}/index"><img src="${contextPath}/resources/images/logo.png" alt="logo" /></a>
             </h1>
         </header>
         <button class="burger">
@@ -55,7 +55,7 @@
             <div class="sidemenu_footer">
                 <div class="header_section2_content">
                     <div class="header_logo">
-                        <a href="${contextPath}/index"><img src="${contextPath}/resource/images/logo_black.png" class="img-fluid" alt="logo" /></a>
+                        <a href="${contextPath}/index"><img src="${contextPath}/resources/images/logo_black.png" class="img-fluid" alt="logo" /></a>
                     </div>
                     <div class="header_text">
                     	<p>© 2023 NEMO</p>

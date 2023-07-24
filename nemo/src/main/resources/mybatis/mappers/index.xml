@@ -21,5 +21,9 @@
     <result property="bookmark_no" column="bookmark_no"/>
     <result property="report_cnt" column="report_cnt"/>
 </resultMap>
-
+		<select id="selectRamdomGroupList" resultMap="groupResult">
+			<![CDATA[
+				SELECT * FROM (SELECT * FROM group_tbl ORDER BY bookmark_no desc LIMIT 6) a ORDER BY RAND() LIMIT 4
+			]]>
+		</select>
 </mapper>
