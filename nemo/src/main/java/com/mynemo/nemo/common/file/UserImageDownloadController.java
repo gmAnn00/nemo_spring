@@ -39,12 +39,12 @@ public class UserImageDownloadController extends HttpServlet{
 		response.addHeader("Content-disposition", "attachment; fileName=" + user_img);
 		
 		FileInputStream fis = new FileInputStream(imageFile);
-		// ¹öÆÛ¸¦ ÀÌ¿ëÇØ 8kb¾¿ Àü¼Û
+		// ë²„í¼ë¥¼ ì´ìš©í•´ 8kbì”© ì „ì†¡
 		byte[] buffer = new byte[1024*8];
 		
 		while(true) {
 			int count = fis.read(buffer);
-			// ´õ ÀÌ»ó ÀĞÀ» °ÍÀÌ ¾øÀ¸¸é while ¹® Å»Ãâ
+			// ë” ì´ìƒ ì½ì„ ê²ƒì´ ì—†ìœ¼ë©´ while ë¬¸ íƒˆì¶œ
 			if(count == -1) {
 				break;
 			}
