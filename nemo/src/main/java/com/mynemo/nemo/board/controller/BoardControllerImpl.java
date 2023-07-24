@@ -15,7 +15,7 @@ import com.mynemo.nemo.board.vo.CommentVO;
 @Controller
 public class BoardControllerImpl implements BoardController {
 	
-	//±Û¿¡ Ã·ºÎÇÑ ÀÌ¹ÌÁö ÀúÀåÀ§Ä¡ ¼±¾ğ
+	//ê¸€ì— ì²¨ë¶€í•œ ì´ë¯¸ì§€ ì €ì¥ìœ„ì¹˜ ì„ ì–¸
 	private static String ARTICLE_IMG_DIR;
 	
 	@Autowired

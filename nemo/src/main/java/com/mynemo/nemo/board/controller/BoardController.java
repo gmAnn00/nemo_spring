@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 public interface BoardController {
 
-	//list Á¶È¸ (group_id, user_id, pagingMap ÇÊ¿ä?)
+	//list ì¡°íšŒ(group_id, user_id, pagingMap í•„ìš”?)
 	public ModelAndView board(@RequestParam("group_id") int group_id,
 			@RequestParam("user_id") String user_id,
 			HttpServletRequest request, 
