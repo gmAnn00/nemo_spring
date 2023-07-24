@@ -2,8 +2,10 @@ package com.mynemo.nemo.group.vo;
 
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component("joinVO")
 public class JoinVO {
-	private int join_id;
 	private int group_id;
 	private String user_id;
 	private Date join_date;
@@ -11,14 +13,6 @@ public class JoinVO {
 	
 	public JoinVO() {
 		// TODO Auto-generated constructor stub
-	}
-
-	public int getJoin_id() {
-		return join_id;
-	}
-
-	public void setJoin_id(int join_id) {
-		this.join_id = join_id;
 	}
 
 	public int getGroup_id() {

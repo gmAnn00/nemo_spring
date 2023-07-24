@@ -1,21 +1,15 @@
 package com.mynemo.nemo.user.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component("interestsVO")
 public class InterestsVO {
-	private int interest_id;
 	private String user_id;
 	private String main_cate;
 	private String sub_cate;
 	
 	public InterestsVO() {
 		// TODO Auto-generated constructor stub
-	}
-
-	public int getInterest_id() {
-		return interest_id;
-	}
-
-	public void setInterest_id(int interest_id) {
-		this.interest_id = interest_id;
 	}
 
 	public String getUser_id() {

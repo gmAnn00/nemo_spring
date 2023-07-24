@@ -2,6 +2,9 @@ package com.mynemo.nemo.report.vo;
 
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component("userReportVO")
 public class UserReportVO {
 	private int report_id;
 	private String reporter_id;

@@ -2,6 +2,9 @@ package com.mynemo.nemo.group.vo;
 
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component("schedulVO")
 public class ScheduleVO {
 	private int schedule_id;
 	private Date schedule_date;

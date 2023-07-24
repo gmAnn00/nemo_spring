@@ -4,9 +4,27 @@
                 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.index">
 <resultMap type="groupVO" id="groupResult">
-    <result property="user_id" column="user_id"/>
-
+    <result property="group_id" column="group_id"/>
+    <result property="group_name" column="group_name"/>
+    <result property="group_leader" column="group_leader"/>
+    <result property="max_memno" column="max_memno"/>
+    <result property="current_memno" column="current_memno"/>
+    <result property="group_zip" column="group_zip"/>
+    <result property="group_addr1" column="group_addr1"/>
+    <result property="group_addr2" column="group_addr2"/>
+    <result property="create_date" column="create_date"/>
+    <result property="group_ment" column="group_ment"/>
+    <result property="permission" column="permission"/>
+    <result property="main_cate" column="main_cate"/>
+    <result property="sub_cate" column="sub_cate"/>
+    <result property="group_img" column="group_img"/>
+    <result property="bookmark_no" column="bookmark_no"/>
+    <result property="report_cnt" column="report_cnt"/>
 </resultMap>
 
+		<!-- 비로그인시 랜덤으로 추천 소모임 받아오는 메소드 -->
+		<select id="selectRamdomGroupList" resultMap="groupResult">
+			
+		</select>	
 
 </mapper>

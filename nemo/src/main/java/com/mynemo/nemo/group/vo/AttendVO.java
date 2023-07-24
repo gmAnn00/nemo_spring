@@ -1,17 +1,22 @@
 package com.mynemo.nemo.group.vo;
 
-import java.sql.Date;
+import org.springframework.stereotype.Component;
 
+@Component("attentVO")
 public class AttendVO {
 
 	private int attend_id;
-	private int group_id;
-	private Date schedule_date;
-	private String schedule_time;
+	private int schedule_id;
 	private String user_id;
 	
 	public AttendVO() {
 		// TODO Auto-generated constructor stub
+	}
+
+	public AttendVO(int attend_id, int schedule_id, String user_id) {
+		this.attend_id = attend_id;
+		this.schedule_id = schedule_id;
+		this.user_id = user_id;
 	}
 
 	public int getAttend_id() {
@@ -22,28 +27,12 @@ public class AttendVO {
 		this.attend_id = attend_id;
 	}
 
-	public int getGroup_id() {
-		return group_id;
+	public int getSchedule_id() {
+		return schedule_id;
 	}
 
-	public void setGroup_id(int group_id) {
-		this.group_id = group_id;
-	}
-
-	public Date getSchedule_date() {
-		return schedule_date;
-	}
-
-	public void setSchedule_date(Date schedule_date) {
-		this.schedule_date = schedule_date;
-	}
-
-	public String getSchedule_time() {
-		return schedule_time;
-	}
-
-	public void setSchedule_time(String schedule_time) {
-		this.schedule_time = schedule_time;
+	public void setSchedule_id(int schedule_id) {
+		this.schedule_id = schedule_id;
 	}
 
 	public String getUser_id() {
@@ -53,7 +42,6 @@ public class AttendVO {
 	public void setUser_id(String user_id) {
 		this.user_id = user_id;
 	}
-	
 	
 	
 }

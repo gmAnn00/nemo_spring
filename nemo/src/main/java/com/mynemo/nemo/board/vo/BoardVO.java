@@ -1,6 +1,7 @@
 package com.mynemo.nemo.board.vo;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import org.springframework.stereotype.Component;
 
@@ -8,8 +9,8 @@ import org.springframework.stereotype.Component;
 public class BoardVO {
 	private int article_no;
 	private String user_id;
-	private String group_id;
-	private Date create_date;
+	private int group_id;
+	private Timestamp create_date;
 	private String title;
 	private String content;
 	private String brackets;
@@ -36,19 +37,19 @@ public class BoardVO {
 		this.user_id = user_id;
 	}
 
-	public String getGroup_id() {
+	public int getGroup_id() {
 		return group_id;
 	}
 
-	public void setGroup_id(String group_id) {
+	public void setGroup_id(int group_id) {
 		this.group_id = group_id;
 	}
 
-	public Date getCreate_date() {
+	public Timestamp getCreate_date() {
 		return create_date;
 	}
 
-	public void setCreate_date(Date create_date) {
+	public void setCreate_date(Timestamp create_date) {
 		this.create_date = create_date;
 	}
 

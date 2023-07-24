@@ -1,20 +1,19 @@
 package com.mynemo.nemo.group.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component("categoryVO")
 public class CategoryVO {
-	private int category_id;
 	private String main_cate;
 	private String sub_cate;
 	
 	public CategoryVO() {
 		// TODO Auto-generated constructor stub
 	}
-
-	public int getCategory_id() {
-		return category_id;
-	}
-
-	public void setCategory_id(int category_id) {
-		this.category_id = category_id;
+	
+	public CategoryVO(String main_cate, String sub_cate) {
+		this.main_cate = main_cate;
+		this.sub_cate = sub_cate;
 	}
 
 	public String getMain_cate() {
