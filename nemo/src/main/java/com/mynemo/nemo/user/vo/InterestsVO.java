@@ -1,5 +1,8 @@
 package com.mynemo.nemo.user.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component("interestsVO")
 public class InterestsVO {
 	private String user_id;
 	private String main_cate;

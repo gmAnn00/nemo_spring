@@ -1,5 +1,8 @@
 package com.mynemo.nemo.group.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component("attentVO")
 public class AttendVO {
 
 	private int attend_id;

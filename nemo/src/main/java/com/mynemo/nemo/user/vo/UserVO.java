@@ -5,6 +5,9 @@ import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component("userVO")
 public class UserVO {
 	private String user_id;
 	private String password;

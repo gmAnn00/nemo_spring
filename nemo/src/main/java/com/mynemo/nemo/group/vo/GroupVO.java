@@ -5,6 +5,9 @@ import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component("groupVO")
 public class GroupVO {
 
 	private int group_id;
