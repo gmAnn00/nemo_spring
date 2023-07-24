@@ -2,6 +2,9 @@ package com.mynemo.nemo.group.vo;
 
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component("joinVO")
 public class JoinVO {
 	private int group_id;
 	private String user_id;

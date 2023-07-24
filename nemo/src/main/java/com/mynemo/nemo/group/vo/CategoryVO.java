@@ -1,5 +1,8 @@
 package com.mynemo.nemo.group.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component("categoryVO")
 public class CategoryVO {
 	private String main_cate;
 	private String sub_cate;

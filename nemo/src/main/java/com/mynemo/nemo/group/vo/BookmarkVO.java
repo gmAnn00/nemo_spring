@@ -1,5 +1,8 @@
 package com.mynemo.nemo.group.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component("bookmarkVO")
 public class BookmarkVO {
 	private String user_id;
 	private int group_id;

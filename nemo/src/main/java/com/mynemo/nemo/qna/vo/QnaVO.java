@@ -3,6 +3,9 @@ package com.mynemo.nemo.qna.vo;
 import java.sql.Date;
 import java.sql.Timestamp;
 
+import org.springframework.stereotype.Component;
+
+@Component("qnaVO")
 public class QnaVO {
 	private int qna_no;
 	private String user_id;

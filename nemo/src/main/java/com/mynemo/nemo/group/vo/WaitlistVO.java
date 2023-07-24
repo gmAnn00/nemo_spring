@@ -1,5 +1,8 @@
 package com.mynemo.nemo.group.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component("waitlistVO")
 public class WaitlistVO {
 	private int group_id;
 	private String user_id;
