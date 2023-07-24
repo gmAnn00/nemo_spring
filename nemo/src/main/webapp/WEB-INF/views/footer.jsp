@@ -60,7 +60,7 @@
 
                     <div class="footer_section2_content">
                         <div class="footer_logo">
-                            <a href="${contextPath}/index"><img src="${contextPath}/images/logo_white.png" class="img-fluid" alt="logo" /></a>
+                            <a href="${contextPath}/index"><img src="${contextPath}/resources/images/logo_white.png" class="img-fluid" alt="logo" /></a>
                         </div>
                         <div class="footer_text">
                             <p>© 2023 NEMO</p>
