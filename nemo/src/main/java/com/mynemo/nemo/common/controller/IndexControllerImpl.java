@@ -29,23 +29,28 @@ public class IndexControllerImpl implements IndexController {
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        session=request.getSession();
-        String user_id=(String)session.getAttribute("user_id");
-    	String viewName=(String)request.getAttribute("viewName");
+        //session=request.getSession();
+        //String user_id=(String)session.getAttribute("user_id");
+    	String user_id="hong1234";
+    	request.setAttribute("user_id", "hong1234");
+        String viewName=(String)request.getAttribute("viewName");
         ModelAndView mav=new ModelAndView(viewName);
         
         //비로그인시
         if(user_id==null) {
-        	List<GroupVO> randomGroupsList=indexService.getRandomGroupList();
-        	mav.addObject("randomGroupsList", randomGroupsList);
+        	List<GroupVO> recommendGroupList=indexService.getRecommendGroupList();
+        	mav.addObject("recommendGroupList", recommendGroupList);
         	//request.setAttribute("groupList", groupList);
-        } else {
-        	
+        } else {        	
+        	// 로그인했을 때 소모임 관심사
+        	List<GroupVO> interestGroupList=indexService.getInterestsGroupList(user_id);
+        	mav.addObject("interestGroupList",interestGroupList);
         }
 
         return mav;
     }
 
+    
 	@Override
 	@RequestMapping(value="/indexTest", method = {RequestMethod.GET,RequestMethod.POST})
 	public ModelAndView indexTest(HttpServletRequest request, HttpServletResponse response) throws Exception {

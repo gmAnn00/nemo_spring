@@ -202,23 +202,30 @@
 	                    <h3 class="smallText_title">추천 소모임</h3>
 	                </div>
 	                <div class="cards">
-	               		 <c:forEach var="group" items="${randomGroupsList}">
-		                    <div class="card card--1">
-		                        <div class="card__info-hover">
-		                        </div>
-		                        <div class="card__img"></div>
-		                        <a href="${contextPath}/group/groupInfo?group_id=${group.group_id}" class="card_link">
-		                            <div class="card__img--hover" style="background-image: url('${contextPath}/resources/groupImages/${group.group_id}/${group.group_img}')"></div>
-		                        </a>
-		                        <div class="card__info">
-		                            <span class="card__category">${group.main_cate}</span>
-		                            <span class="card__category">${group.sub_cate}</span>
-		                            <h3 class="card__title">${group.group_name}</h3>
-		                            <span class="card__by"><i class="fa-solid fa-location-dot"></i> <a href="" class="card__author">${group.group_addr1}</a></span>
-		                        </div>
-		                    </div>
-	                	
-	              	  </c:forEach>
+	                	<c:choose> 
+		                	<c:when test="${empty recommendGroupList}">
+		                		소모임을 만들어주세요
+		                	</c:when>
+		                	<c:otherwise>
+				                <c:forEach var="group" items="${recommendGroupList}">
+				                    <div class="card card--1">
+				                        <div class="card__info-hover">
+				                        </div>
+				                        <div class="card__img"></div>
+				                        <a href="${contextPath}/group/groupInfo?group_id=${group.group_id}" class="card_link">
+				                            <div class="card__img--hover" style="background-image: url('${contextPath}/resources/groupImages/${group.group_id}/${group.group_img}')"></div>
+				                        </a>
+				                        <div class="card__info">
+				                            <span class="card__category">${group.main_cate}</span>
+				                            <span class="card__category">${group.sub_cate}</span>
+				                            <h3 class="card__title">${group.group_name}</h3>
+				                            <span class="card__by"><i class="fa-solid fa-location-dot"></i> <a href="" class="card__author">${group.group_addr1}</a></span>
+				                        </div>
+				                    </div>
+			                	
+			              	  </c:forEach>
+		                	</c:otherwise>
+	                	</c:choose>
 	                </div>
 	            </div>
         	</c:if>
@@ -230,7 +237,7 @@
 	                    <h3 class="smallText_title">관심사 소모임</h3>
 	                </div>
 	               <div class="cards">
-	               		<c:forEach var="group" items="${interestGroupsList}">
+	               		<c:forEach var="group" items="${interestGroupList}">
 		                    <div class="card card--1">
 		                        <div class="card__info-hover">
 		                        </div>
@@ -249,6 +256,7 @@
 	               </div>
 	            </div>
 	            
+	            <!-- 
 	            <div class="smallPage">
 	                <div class="smallText">
 	                    <h3 class="smallText_title">가까운 소모임</h3>
@@ -273,6 +281,7 @@
 	            	   </c:forEach>
 	               </div>
 	            </div>
+	             -->
             <!-- 관심사, 소모임 보여주는 영역 종료 -->
         	</c:if>
         </div>

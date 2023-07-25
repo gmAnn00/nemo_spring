@@ -25,9 +25,15 @@ public class IndexServiceImpl implements IndexService {
 
 	//비 로그인시 추천 소모임 받아오는 메소드
 	@Override
-	public List<GroupVO> getRandomGroupList() throws Exception {
-		return indexDAO.getRandomGroupList();
+	public List<GroupVO> getRecommendGroupList() throws Exception {
+		return indexDAO.getRecommendGroups();
 		//return null;
+	}
+
+	@Override
+	public List<GroupVO> getInterestsGroupList(String user_id) throws Exception {
+
+		return indexDAO.getInterestsGroups(user_id);
 	}
 
 }

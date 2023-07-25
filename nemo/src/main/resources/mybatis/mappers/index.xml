@@ -21,9 +21,16 @@
     <result property="bookmark_no" column="bookmark_no"/>
     <result property="report_cnt" column="report_cnt"/>
 </resultMap>
-		<select id="selectRamdomGroupList" resultMap="groupResult">
+		<select id="selectRecommendGroups" resultMap="groupResult">
 			<![CDATA[
 				SELECT * FROM (SELECT * FROM group_tbl ORDER BY bookmark_no desc LIMIT 6) a ORDER BY RAND() LIMIT 4
+			]]>
+		</select>
+		
+		<select id="selectInterestsGroups" resultMap="groupResult" parameterType="String">
+			<![CDATA[
+				SELECT g.* FROM group_tbl g, (SELECT main_cate, sub_cate FROM interests_tbl WHERE user_id=#{user_id}) i 
+				WHERE g.SUB_CATE=i.sub_cate AND g.MAIN_CATE=i.main_cate ORDER BY RAND() LIMIT 4
 			]]>
 		</select>
 </mapper>

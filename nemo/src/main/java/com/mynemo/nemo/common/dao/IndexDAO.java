@@ -9,6 +9,7 @@ import com.mynemo.nemo.group.vo.GroupVO;
 public interface IndexDAO {
 	
 	//비로그인시 랜덤으로 추천 소모임 가져오는 메소드
-	public List<GroupVO> getRandomGroupList() throws DataAccessException;
+	public List<GroupVO> getRecommendGroups() throws DataAccessException;
 	
+	public List<GroupVO> getInterestsGroups(String user_id) throws DataAccessException;
 }

@@ -15,12 +15,21 @@ public class IndexDAOImpl implements IndexDAO {
 	private SqlSession sqlSession;
 	
 	
+	//비 로그인 시 추천 소모임을 랜덤하게 받아오는 메소드
 	@Override
-	public List<GroupVO> getRandomGroupList() throws DataAccessException{
-		List<GroupVO> groupList=null;
-		groupList=sqlSession.selectList("mapper.index.selectRamdomGroupList");
-		return groupList;
+	public List<GroupVO> getRecommendGroups() throws DataAccessException{
+		List<GroupVO> recommendGroupList=null;
+		recommendGroupList=sqlSession.selectList("mapper.index.selectRecommendGroups");
+		return recommendGroupList;
 		//return null;
+	}
+
+	//로그인 했을때 관심사를 기준으로 소모임을 랜덤하게 받아오는 메소드
+	@Override
+	public List<GroupVO> getInterestsGroups(String user_id) throws DataAccessException {
+		List<GroupVO> interestsGroupList=null;
+		interestsGroupList=sqlSession.selectList("mapper.index.selectInterestsGroups", user_id);
+		return interestsGroupList;
 	}
 
 }
