@@ -44,9 +44,9 @@ public class IndexControllerImpl implements IndexController {
         } else {        	
         	// 로그인했을 때 소모임 관심사
         	List<GroupVO> interestGroupList=indexService.getInterestsGroupList(user_id);
-        	//List<GroupVO> nearGroupList=indexService.getNearGroupList(user_id);
+        	List<GroupVO> nearGroupList=indexService.getNearGroupList(user_id);
         	mav.addObject("interestGroupList",interestGroupList);
-        	//mav.addObject("nearGroupList", nearGroupList);
+        	mav.addObject("nearGroupList", nearGroupList);
         }
 
         return mav;

@@ -263,7 +263,7 @@
 	               </div>
 	            </div>
 	            
-	            <!-- 
+	            
 	            <div class="smallPage">
 	                <div class="smallText">
 	                    <h3 class="smallText_title">가까운 소모임</h3>
@@ -295,7 +295,7 @@
 			            </c:choose>
 	               </div>
 	            </div>
-	             -->
+	     
             <!-- 관심사, 소모임 보여주는 영역 종료 -->
         	</c:if>
         </div>
