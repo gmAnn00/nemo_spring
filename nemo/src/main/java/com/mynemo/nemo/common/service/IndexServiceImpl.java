@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.mynemo.nemo.common.dao.IndexDAO;
 import com.mynemo.nemo.group.vo.GroupVO;
 import com.mynemo.nemo.test.dao.TestDAO;
+import com.mynemo.nemo.user.dao.UserDAO;
 
 @Service("indexService")
 public class IndexServiceImpl implements IndexService {
@@ -17,6 +18,9 @@ public class IndexServiceImpl implements IndexService {
 	
 	@Autowired
 	private IndexDAO indexDAO;
+	
+	@Autowired
+	private UserDAO userDAO;
 	
 	@Override
 	public int selectTest() throws Exception {
@@ -34,6 +38,12 @@ public class IndexServiceImpl implements IndexService {
 	public List<GroupVO> getInterestsGroupList(String user_id) throws Exception {
 
 		return indexDAO.getInterestsGroups(user_id);
+	}
+
+	@Override
+	public List<GroupVO> getNearGroupList(String user_id) throws Exception {
+		String user_addr=userDAO.getUserAddr(user_id);
+		return indexDAO.getNearGroups(user_addr);
 	}
 
 }

@@ -32,4 +32,12 @@ public class IndexDAOImpl implements IndexDAO {
 		return interestsGroupList;
 	}
 
+	@Override
+	public List<GroupVO> getNearGroups(String user_addr) throws DataAccessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
 }

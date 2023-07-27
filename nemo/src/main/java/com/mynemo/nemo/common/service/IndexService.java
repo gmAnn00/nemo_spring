@@ -13,5 +13,7 @@ public interface IndexService {
 	
 	//로그인 했을 때 관심사를 기준으로 그룹 리스트를 받아오는 서비스 
 	public List<GroupVO> getInterestsGroupList(String user_id) throws Exception;
+	
+	public List<GroupVO> getNearGroupList(String user_id) throws Exception;
 		
 }

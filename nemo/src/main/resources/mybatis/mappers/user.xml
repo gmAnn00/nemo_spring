@@ -5,8 +5,28 @@
 <mapper namespace="mapper.user">
 <resultMap type="userVO" id="userResult">
     <result property="user_id" column="user_id"/>
-
+    <result property="password" column="password"/>
+    <result property="user_name" column="user_name"/>
+    <result property="nickname" column="nickname"/>
+    <result property="zipcode" column="zipcode"/>
+    <result property="user_addr1" column="user_addr1"/>
+    <result property="user_addr2" column="user_addr2"/>
+    <result property="phone" column="phone"/>
+    <result property="email" column="email"/>
+    <result property="join_date" column="join_date"/>
+    <result property="birthdate" column="birthdate"/>
+    <result property="user_img" column="user_img"/>
+    <result property="report_cnt" column="report_cnt"/>
+    <result property="session_id" column="session_id"/>
+    <result property="sns_login" column="sns_login"/>
+    <result property="admin" column="admin"/>
+    <result property="withdraw" column="withdraw"/>
 </resultMap>
 
-
+		<!-- 유저의 주소를 받아오는 sql -->
+		<select id="selectUserAddr" resultType="String">
+			<![CDATA[
+				SELECT user_addr1 FROM user_tbl WHERE user_id=#{user_id}
+			]]>
+		</select>
 </mapper>
