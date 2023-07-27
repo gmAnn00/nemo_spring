@@ -23,10 +23,5 @@
     <result property="withdraw" column="withdraw"/>
 </resultMap>
 
-		<!-- 유저의 주소를 받아오는 sql -->
-		<select id="selectUserAddr" resultType="String">
-			<![CDATA[
-				SELECT user_addr1 FROM user_tbl WHERE user_id=#{user_id}
-			]]>
-		</select>
+
 </mapper>
